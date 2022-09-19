@@ -27,13 +27,13 @@ const Inputwraper = () => {
         // prevent the website from refreshing when a submission occur
         event.preventDefault();
         
-        if (/[A-Z]/.test(input.Text) && !(/\s/.test(input.Text)) && input.n > 0 && input.e > 0){
+        if (/^[A-Z]+$/.test(input.Text) && !(/\s/.test(input.Text)) && input.n > 0 && input.e > 0){
             setfinal(calculate(input.Text,input.n,input.e));
             setissubmit(true);
             console.log(issubmit);
         }
         else 
-            alert("Invalid Input : \nText can only contain alphabet and no spacing\nn and e must be a possitive number")
+            alert("Invalid Input : \nText can only contain Uppercase alphabet and no spacing\nn and e must be a possitive number")
     }
 
 
