@@ -7,7 +7,8 @@ const Home = () => {
         <div className="Home" >
             <Header></Header>
             {render_Inputnoutput}
-            <Steps {...{final, issubmit}}></Steps>
+            
+            {/*<Steps {...{final, issubmit}}></Steps>*/}
             
         </div>
     );
